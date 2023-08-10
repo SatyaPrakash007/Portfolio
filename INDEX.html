@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial">
+    <title> Satya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 62);
+        }
+
+        /* Menu bar styles */
+        header {
+            background-color: #0b3a3b;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+            list-style: none;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Sticky header */
+        main {
+            padding-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                height: auto;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 255);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .buttons a:hover {
+            color: #0e0e1a;
+            font-size: 20px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #0b3a3b;
+            color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .leftSection .btntwo {
+            padding: 12px;
+            background-color: #0b3a3b;
+            color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+            width: 80;
+        }
+
+        
+
+        .purple {
+            color: rgb(170, 105, 231);
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: 1.3rem;
+        }
+
+        .sk {
+            font-size: 1.9rem;
+        }
+
+        #element {
+            color: rgb(170, 105, 231);
+        }
+
+        .secondSection {
+            display: flex;
+            max-width: 80vw;
+            margin: 130px 0;
+            height: 120px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+
+        footer {
+            background-color: #0e0e1a;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 23px;
+        }
+
+        footer .footer-right {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+
+        .linked {
+            text-decoration: none;
+        }
+
+        .btn {
+            text-decoration: none;
+        }
+
+        .btntwo {
+            text-decoration: none;
+        }
+
+        .git:hover {
+            color: blue;
+        }
+
+        .git {
+            text-decoration: none;
+            color: white;
+        }
+
+        .linked:hover {
+            color: blue;
+        }
+
+        .linked {
+            text-decoration: none;
+            color: white;
+        }
+
+        .insta:hover {
+            color: blue;
+        }
+
+        .insta {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Media query for smaller devices (up to 768px) */
+        @media (max-width: 768px) {
+            .firstSection {
+                flex-direction: column;
+            }
+
+            .firstSection>div,
+            .rightSection {
+                width: 100%;
+                text-align: center;
+            }
+
+            .rightSection img,
+            .leftSection img {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 20px;
+            }
+
+            .firstSection .buttons {
+                padding: 20px 0;
+            }
+
+            .leftSection .btn,
+            .leftSection .btntwo {
+                font-size: 16px;
+            }
+
+            .secondSection {
+                flex-direction: column;
+            }
+        }
+
+        /* Media query for larger devices (769px and above) */
+        @media (min-width: 769px) {
+            .firstSection {
+                justify-content: space-around;
+            }
+
+            .rightSection img,
+            .leftSection img {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 0;
+            }
+
+            .firstSection .buttons {
+                padding: 50px 0;
+            }
+
+            .leftSection .btn,
+            .leftSection .btntwo {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Satya Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi My name is <span class="purple">Satya Prakesh</span>
+
+                <div>I'm a computer science student and a passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button><a class="btn"
+                            href="https://drive.google.com/file/d/1hjgmf-Mw0kLDNEqfdZroEFk8wWfHzGvl/view?usp=sharing">Download
+                            Resume</a></button>
+                </div>
+                <section class="second1">
+                    <div class="travel">
+                        <div class="buttons"><button><a class="btntwo" href="">
+                                    Potfolio project github link</a></button>
+                        </div>
+                </section>
+            </div>
+            <div class="rightSection">
+                <img src="developer.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="second">
+            <h1><span class="sk">Skill</span></h1>
+
+            <div><span class="text-gray">HTML</span></div>
+
+            <div><span class="text-gray">CSS</span></div>
+
+            <div> <span class="text-gray">JAVAScript</span></div>
+
+            <div><span class="text-gray">C</span></div>
+
+            <div><span class="text-gray">C++</span></div>
+
+            <div><span class="text-gray">JAVA</span></div>
+
+            <div><span class="text-gray">Currently I am learning DSA in C++</span></div>
+        </section>
+
+        <hr>
+        <section class="third">
+            <h1><span class="project">Project</span></h1>
+            <div><span class="text-gray">I have created a portfolio website</span>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first"></div>
+
+            <h3>Contact Me</h3>
+            <div class="second">
+                <ul>
+                    <li>
+                        <a class="linked" href="">
+                            linkedin</a>
+                    </li>
+                    <li><a class="git" href="">
+                            Github</a>
+                    </li>
+                    <li><a class="insta" href="https://instagram.com/satyaprakash.__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                            Instagram
+                        </a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-right">
+            Copyright &#169; Satyaportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'And also a good learner'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
